@@ -1,0 +1,35 @@
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    padding: 32px 16px;
+
+    &.show {
+        .text-box {
+            color: #fafafa;
+        }
+    }
+
+    .text-box {
+        padding: 16px;
+        max-width: 700px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 24px;
+        position: relative;
+        color: #171616;
+        text-align: center;
+        transition: ease 1.5s;
+
+        @media (min-width: 768px) {
+            font-size: 32px;
+            padding: 24px;
+        }
+
+        .text {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}

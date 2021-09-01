@@ -1,0 +1,44 @@
+.about-us-slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    clip-path: inset(40% 30% 0 30%);
+    transition: cubic-bezier(0.45, 0.78, 0.92, 0.99) 1s;
+
+    &.show {
+        clip-path: inset(0 0 0 0);
+    }
+
+    .slick-slider, .slick-list, 
+    .slick-track, .slick-slide {
+        height: 100%;
+    }
+
+    .slick-slide div {
+        height: 100%;
+    }
+
+    .slide {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba($color: #000, $alpha: 0.5);
+        }
+
+        @for $i from 1 to 4 {
+            &-#{$i} {
+                background: url('../../../assets/img/#{$i}.jpg'), no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}

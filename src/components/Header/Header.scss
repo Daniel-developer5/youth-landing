@@ -1,0 +1,98 @@
+$slide-animation-delay: 1s;
+$slide-animation-duration: 1s;
+
+.header {
+    height: 100vh;
+    position: relative;
+
+    .header-content {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fafafa;
+
+        &.dark {
+            background-color: #171616;
+
+            .content-box {
+                .title {
+                    color: #fafafa;
+                }
+
+                .cross-img .cross {
+                    fill: #fafafa;
+                }
+            }
+        }
+
+        .content-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                font-family: 'Bebas Neue', cursive;
+                letter-spacing: 4px;
+                font-size: 48px;
+                color: #171616;
+                animation: text-shadow 10s ease $slide-animation-delay + $slide-animation-duration infinite forwards;
+
+                @media (min-width: 768px) {
+                    letter-spacing: 5px;
+                    font-size: 64px;
+                }
+                
+                @media (min-width: 1000px) {
+                    letter-spacing: 6px;
+                    font-size: 80px;
+                }
+
+                @keyframes text-shadow {
+                    0% {
+                        text-shadow: 0 0 0 #9a04bf;
+                    }
+                    50% {
+                        text-shadow: 0 0 80px #9a04bf;
+                    }
+                    100% {
+                        text-shadow: 0 0 0 #9a04bf;
+                    }
+                }
+            }
+
+            .cross-img {
+                width: 100%;
+                max-width: 250px;
+                margin: 16px 0;
+
+                .cross {
+                    fill: #171616;
+                }
+
+                @media (min-width: 768px) {
+                    margin: 32px 0;
+                }
+            }
+        }
+    }
+
+    .slide-right-animation {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        clip-path: inset(0 100% 0 0);
+        animation: slide-right $slide-animation-duration ease-out $slide-animation-delay forwards;
+
+        @keyframes slide-right {
+            from {
+                clip-path: inset(0 100% 0 0);
+            }
+            to {
+                clip-path: inset(0 0 0 0);
+            }
+        }
+    }
+}
