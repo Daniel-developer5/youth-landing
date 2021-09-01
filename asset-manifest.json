@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/youth-landing/static/css/main.6c71e144.chunk.css",
+    "main.js": "/youth-landing/static/js/main.e650537e.chunk.js",
+    "main.js.map": "/youth-landing/static/js/main.e650537e.chunk.js.map",
+    "runtime-main.js": "/youth-landing/static/js/runtime-main.62521c54.js",
+    "runtime-main.js.map": "/youth-landing/static/js/runtime-main.62521c54.js.map",
+    "static/js/2.247394d0.chunk.js": "/youth-landing/static/js/2.247394d0.chunk.js",
+    "static/js/2.247394d0.chunk.js.map": "/youth-landing/static/js/2.247394d0.chunk.js.map",
+    "static/js/3.51cdcee2.chunk.js": "/youth-landing/static/js/3.51cdcee2.chunk.js",
+    "static/js/3.51cdcee2.chunk.js.map": "/youth-landing/static/js/3.51cdcee2.chunk.js.map",
+    "index.html": "/youth-landing/index.html",
+    "static/css/main.6c71e144.chunk.css.map": "/youth-landing/static/css/main.6c71e144.chunk.css.map",
+    "static/js/2.247394d0.chunk.js.LICENSE.txt": "/youth-landing/static/js/2.247394d0.chunk.js.LICENSE.txt",
+    "static/media/Slider.scss": "/youth-landing/static/media/3.a1afa0ca.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.62521c54.js",
+    "static/js/2.247394d0.chunk.js",
+    "static/css/main.6c71e144.chunk.css",
+    "static/js/main.e650537e.chunk.js"
+  ]
+}
